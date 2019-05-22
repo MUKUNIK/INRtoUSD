@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INR-USD Convertor</title>
+	<link rel="stylesheet" type="text/css" href="Main.css">
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  
+</head>
+<body>
+<div>
+	
+	<h2>RATE</h2>
+	<input type="Text" name="Rate" id="Rate" placeholder="	Rate(INR/USD)">
+
+	<h2>INR</h2>
+	<input type="Text" onkeyup="myfunction1()" name="Cur1" id="Cur1" placeholder="	INR" ><br>
+	<h2>USD</h2>
+	<input type="Text" onkeyup="myfunction2()" name="Cur2" id="Cur2" placeholder="	USD"><br>
+</div>
+
+<script type="text/javascript">
+	var x;
+	function myfunction1(){
+		x = document.getElementById("Cur1").value;
+		if(document.getElementById("Rate").value!=""){
+		x = x*document.getElementById("Rate").value;
+	document.getElementById("Cur2").value = x;
+}
+}
+	function myfunction2(){
+		x = document.getElementById("Cur2").value;
+		if(document.getElementById("Rate").value!=""){
+		x = x/document.getElementById("Rate").value;
+	document.getElementById("Cur1").value = x;
+}
+
+}
+	
+</script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<body>
+</html>

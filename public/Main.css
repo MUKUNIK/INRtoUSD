@@ -1,0 +1,19 @@
+body {
+	background: url("back.jpg") fixed;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+h2 {
+	color: yellow;
+}
+
+div{
+	text-align: center;
+}
+
+input {
+	border-radius: 5px;
+	border:none;
+}
